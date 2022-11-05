@@ -10,6 +10,31 @@ $ cd staking-contracts
 $ npm i
 ```
 
+## Staking and Unstaking
+Please make sure required values are set in .env to use this command
+```
+cp .env.example .env
+```
+Add your private key to the .env file and save
+
+### Stake balance to contract
+```shell
+$ npm run stake-test
+```
+
+### Unstake from contract
+
+```shell
+$ npm run unstake-test
+```
+
+### Check current total staked amount and validators in contract
+
+```shell
+$ npm run info
+```
+
+## Building Contract from Source
 ### Build contracts
 
 ```shell
@@ -26,24 +51,4 @@ $ npm run test
 
 ```shell
 $ npm run deploy
-```
-
-### Stake balance to contract
-
-Please make sure required values are set in .env to use this command
-
-```shell
-$ npm run stake
-```
-
-### Unstake from contract
-
-```shell
-$ npm run unstake
-```
-
-### Check current total staked amount and validators in contract
-
-```shell
-$ npm run info
 ```

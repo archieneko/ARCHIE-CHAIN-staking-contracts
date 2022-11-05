@@ -7,9 +7,11 @@
   "scripts": {
     "build": "npm run clean && npm run compile",
     "deploy": "hardhat run scripts/deploy.ts --network testnet",
-    "stake": "hardhat run scripts/stake.ts --network testnet",
+    "stake-test": "hardhat run scripts/stake.ts --network testnet",
+    "stake-main": "hardhat run scripts/stake.ts --network mainnet",
     "transfer": "hardhat run scripts/transfer.ts --network testnet",
-    "unstake": "hardhat run scripts/unstake.ts --network testnet",
+    "unstake-test": "hardhat run scripts/unstake.ts --network testnet",
+    "unstake-main": "hardhat run scripts/unstake.ts --network mainnet",
     "register-blskey": "hardhat run scripts/register-bls-key.ts --network testnet",
     "info": "hardhat run scripts/info.ts --network testnet",
     "test": "npx hardhat test",
